@@ -1,0 +1,26 @@
+{
+  "name": "tpruby",
+  "version": "0.0.2",
+  "description": "a sample ruby app for heroku",
+  "main": "sinatra.rb",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~3.3.4"
+  },
+  "engines": {
+    "node": "0.10.36",
+    "npm": "2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palepoivre/tpruby"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Moi",
+  "license": "MIT",
+}
