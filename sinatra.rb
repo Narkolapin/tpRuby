@@ -56,7 +56,6 @@ __END__
 		<title>Sinatra Chat</title>
 		<meta charset="utf-8" />
 		<link type="text/css" rel="stylesheet" href="/style.css"/>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	</head>
 	<body>
 		<center>
@@ -95,10 +94,11 @@ __END__
 	<form id="form">
 		<input type="hidden" id="userfield" value="<%= user %>" />
 		<input id='msgfield' placeholder='Tapez votre message ici...' />
-		<input type="button" value="OK" />
+		<input type="submit" value="OK" />
 	</form> 
 </center>
 
+<script src="jquery.js"></script>
 <script>
 
 $( document ).ready(function() {
@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
 	}, 500);
 
-	$("#form").click(function(e) {
+	$("#form").submit(function(e) {
 		e.preventDefault();
 		$.post('/', {msgfield: $('#msgfield').val(), userfield: $("#userfield").val()});
 		$('#msgfield').val(''); 
