@@ -95,7 +95,7 @@ __END__
 	<form id="form">
 		<input type="hidden" id="userfield" value="<%= user %>" />
 		<input id='msgfield' placeholder='Tapez votre message ici...' />
-		<input type="submit" value="OK" />
+		<input type="button" value="OK" />
 	</form> 
 </center>
 
@@ -117,7 +117,7 @@ $( document ).ready(function() {
 
 	}, 500);
 
-	$("#form").submit(function(e) {
+	$("#form").click(function(e) {
 		e.preventDefault();
 		$.post('/', {msgfield: $('#msgfield').val(), userfield: $("#userfield").val()});
 		$('#msgfield').val(''); 
