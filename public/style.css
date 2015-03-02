@@ -1,0 +1,53 @@
+body{
+	background-color:#1B242C;
+}
+
+#chat{   
+	margin: auto;
+   	width:70%;
+   	height:300px;
+   	overflow:auto;
+   	background-color:#BABABA;
+   	box-shadow: 5px 5px 6px 6px black;
+   	word-break: break-all;
+}
+
+span, #msgfield, #pseudofield{
+	font-family: "Helvetica", sans-serif;
+}
+
+#user{
+	color:#005684;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#date{
+	font-size: 12px;
+	margin-left: 5px;
+	color:#565656;
+}
+
+#msg{
+	font-size: 15px;
+}
+
+#banner{
+	color:#0093B5;
+	margin-bottom: 0px;
+}
+
+#msgfield{
+	width:40%;
+	background-color:#BABABA;
+	color:black;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+#pseudofield{
+	width:15%;
+	background-color:#BABABA;
+	color:black;
+	font-size: 15px;
+}
