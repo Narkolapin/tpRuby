@@ -22,9 +22,9 @@ get '/refresh' do
 	count = @@collection.count
 	
 	if count > 20 # S'il y en a plus de 20, on récupère seulement les 20 derniers
-		messages = @@collection.find().sort(:date => :asc).skip(count - 20)
+		messages = @@collection.find().sort(:date => :desc).skip(count - 20)
 	else # Sinon on les récupère tous
-		messages = @@collection.find().sort(:date => :asc)
+		messages = @@collection.find().sort(:date => :desc)
 	end
 
 	# Pour chaque messages on va créer du html qui sera retourner dans "reponse"
