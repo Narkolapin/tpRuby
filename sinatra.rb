@@ -5,8 +5,8 @@ require 'cgi'
 include Mongo
 
 # On se connecte à la base et on récupère la collection
-@@mongo_client = MongoClient.from_uri('mongodb://admin:admin@ds043971.mongolab.com:43971/chat') 
-@@collection = @@mongo_client.db("chat").collection("message")  
+#@@mongo_client = MongoClient.from_uri('mongodb://admin:admin@ds043971.mongolab.com:43971/chat') 
+#@@collection = @@mongo_client.db("chat").collection("message")  
 @@tab =  ["#005684", "#8E1500", "#117500", "#9B9100"]
 
 # En arrivant sur l'application
@@ -84,7 +84,6 @@ __END__
 	<form action='/'>
 		<span for='user'>Choisissez un pseudo:</span>
 		<input name='user' id='pseudofield' maxlength="30" value='' required/>
-		<input type="color" value="#fad345" name="textcolor">
 		<input type='submit' value="Entrer" />
 	</form>
 </center>
@@ -122,7 +121,7 @@ $( document ).ready(function() {
 
 	$("#form").submit(function(e) {
 		e.preventDefault();
-		$.post('/', {msgfield: $('#msgfield').val(), userfield: $("#userfield").val(), , colorfield: $("#colorfield").val()});
+		$.post('/', {msgfield: $('#msgfield').val(), userfield: $("#userfield").val(), colorfield: $("#colorfield").val()});
 		$('#msgfield').val(''); 
 		$('#msgfield').focus();
 
