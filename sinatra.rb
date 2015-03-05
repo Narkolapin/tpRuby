@@ -78,7 +78,7 @@ __END__
 		<%= yield %>
 	</body>
 	<footer>
-			<p>Auteur: Tesner Antoine | Lepoivre Pierre-Antoine | Herve Nicolas</p>
+			<p>Auteurs: Tesner Antoine | Lepoivre Pierre-Antoine | Herve Nicolas</p>
 	</footer>
 </html>
  
