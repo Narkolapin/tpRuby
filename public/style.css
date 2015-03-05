@@ -12,7 +12,7 @@ body{
    	word-break: break-all;
 }
 
-span, #msgfield, #pseudofield{
+span, #msgfield, #pseudofield, footer p{
 	font-family: "Helvetica", sans-serif;
 }
 
@@ -50,4 +50,15 @@ span, #msgfield, #pseudofield{
 	background-color:#BABABA;
 	color:black;
 	font-size: 15px;
+}
+
+footer p{
+	font-size: 13px;
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0%;
+	width: 99%;
 }

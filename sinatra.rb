@@ -5,8 +5,8 @@ require 'cgi'
 include Mongo
 
 # On se connecte à la base et on récupère la collection
-@@mongo_client = MongoClient.from_uri('mongodb://admin:admin@ds043971.mongolab.com:43971/chat') 
-@@collection = @@mongo_client.db("chat").collection("message")  
+#@@mongo_client = MongoClient.from_uri('mongodb://admin:admin@ds043971.mongolab.com:43971/chat') 
+#@@collection = @@mongo_client.db("chat").collection("message")  
 @@tab =  ["#005684", "#8E1500", "#117500", "#9B9100"]
 
 # En arrivant sur l'application
@@ -77,6 +77,9 @@ __END__
 		</center>
 		<%= yield %>
 	</body>
+	<footer>
+			<p>Auteur: Tesner Antoine | Lepoivre Pierre-Antoine | Herve Nicolas</p>
+	</footer>
 </html>
  
 @@ login
